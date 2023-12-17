@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezvee's Avionics Testing</title>
+    <link rel="stylesheet" href="../css/UniversalStyle.css">
+</head>
+<body>
+    <div id="home-sec" class="top-sec">
+        <nav id="home-nav">
+            <ul id="home-nav">
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+            <ul id="home-nav">
+                <li><a href="buttons.html"> Button</a></li>
+                <li><a href="">Labels</a></li>
+                <li><a href="">Check Box</a></li>
+                <li><a href="">Radio Button</a></li>
+                <li><a href="">TextFields</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div>
+        <h1>Buttons</h1>
+        <hr>
+        <div class="Demo-1">
+            <button id="master-caution" type="button">MASTER <br>CAUTION</button>
+            <script> 
+                /**
+                 * Button interaction
+                 */
+                const MASTER_CAUTION = document.querySelector("button#master-caution")
+
+                MASTER_CAUTION.addEventListener("click",
+                    function(e) {
+                        console.log(e);
+                        if(MASTER_CAUTION.style.color == "rgb(255, 255, 59)") {
+                            console.log("here");
+                            MASTER_CAUTION.style.color = "#777726";
+                            MASTER_CAUTION.style.borderColor = "#777726";
+                        }
+                        else {
+                            console.log(MASTER_CAUTION.style.color);
+                            console.log("here???")
+                            MASTER_CAUTION.style.color = "#ffff3b";
+                            MASTER_CAUTION.style.borderColor = "#ffff3b";
+                        }
+                    });
+
+                /**
+                 *  UNSAFE AF THIS CAN FAIL
+                 */
+                MASTER_CAUTION.addEventListener("mousedown",
+                    function(e) {
+                        MASTER_CAUTION.style.borderColor = "#111111"
+                });
+            
+            </script>
+            <button id="fire-warn">FIRE <br> WARN</button>
+            <script> 
+                /**
+                 * Button interaction
+                 */
+                const FIRE_WARN = document.querySelector("button#fire-warn")
+
+                FIRE_WARN.addEventListener("click",
+                    function(e) {
+                        console.log(e);
+                        if(FIRE_WARN.style.color == "rgb(255, 255, 255)") {
+                            FIRE_WARN.style.color = "rgb(148, 148, 148)";
+                            FIRE_WARN.style.background = "rgb(88, 0, 0)"
+                        }
+                        else {
+                            console.log(FIRE_WARN.style.color);
+                            FIRE_WARN.style.color = "rgb(255, 255, 255)";
+                            FIRE_WARN.style.background = "rgb(244, 0, 0)";
+                        }
+                    });
+            </script>
+        </div>
+    </div>
+</body>
+</html>

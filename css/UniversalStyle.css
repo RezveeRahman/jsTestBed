@@ -1,0 +1,50 @@
+.header-1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+.top-sec {
+    border: 1px solid;
+    background-color: #1afdc4af;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    text-align: center;
+}
+
+
+ul#home-nav {
+    list-style-type: none;
+}
+
+.Demo-1 {
+    background-color: #b4abab;
+    padding: 1em;
+    margin: 1em;
+}
+
+button#master-caution {
+    background-color: black;
+    color: #777726;
+    border: 8px solid gray;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 1em;
+    margin: 1em;
+    border-radius: .75em;
+    border-style: double;
+    border-color: #777726;
+}
+
+button#fire-warn {
+    background-color:rgb(88, 0, 0);
+    color: rgb(148, 148, 148);
+    font-size: 28px;
+    cursor: pointer;
+    padding: 1em;
+    margin: 1em;
+    border-radius: .75em;
+    border-style: dashed;
+    border-color: white;
+    border-width: 8px;
+}
